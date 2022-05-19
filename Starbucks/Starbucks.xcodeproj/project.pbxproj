@@ -1,0 +1,1129 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006FA0922832433A00281C4D /* CategoryProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FA0912832433A00281C4D /* CategoryProductEntity.swift */; };
+		006FA0942833408200281C4D /* OrderListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FA0932833408200281C4D /* OrderListTableViewDataSource.swift */; };
+		006FA0962833775400281C4D /* OrderListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FA0952833775400281C4D /* OrderListTableViewDelegate.swift */; };
+		006FA0982833785B00281C4D /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FA0972833785B00281C4D /* OrderListViewModel.swift */; };
+		00AC77CD2833FA3B00BBBF43 /* DetailListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC77CC2833FA3B00BBBF43 /* DetailListEntity.swift */; };
+		1E71CB232835154C00F6D2D0 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71CB222835154C00F6D2D0 /* OrderDetailViewModel.swift */; };
+		71E1C78E63597B5AEE24B83E /* Pods_Starbucks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663577AC173C2F6DE7BEDD8F /* Pods_Starbucks.framework */; };
+		9CFF3F031A8A9E5CAA2DDC05 /* Pods_StarbucksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB5B0DED07CE08CC9C4C6F9 /* Pods_StarbucksTests.framework */; };
+		E0039B56282FD92800298719 /* WhatsNewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0039B55282FD92800298719 /* WhatsNewListViewController.swift */; };
+		E0039B58282FD93200298719 /* WhatsNewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0039B57282FD93200298719 /* WhatsNewListViewModel.swift */; };
+		E0108CD4282FEE4D00CC736C /* WhatsNewListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CD3282FEE4D00CC736C /* WhatsNewListDataSource.swift */; };
+		E0108CD6282FEF4A00CC736C /* WhatsNewListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CD5282FEF4A00CC736C /* WhatsNewListViewCell.swift */; };
+		E0108CDA283128CD00CC736C /* PayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CD9283128CD00CC736C /* PayViewModel.swift */; };
+		E0108CDC28312EED00CC736C /* CameraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CDB28312EED00CC736C /* CameraRepository.swift */; };
+		E0108CDF28312F0E00CC736C /* CameraRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CDE28312F0E00CC736C /* CameraRepositoryImpl.swift */; };
+		E0108CE22831314800CC736C /* CameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CE12831314800CC736C /* CameraSession.swift */; };
+		E0108CE42831E8D600CC736C /* CameraSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CE32831E8D600CC736C /* CameraSessionError.swift */; };
+		E0108CE62832558A00CC736C /* KoreaCash.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E0108CE52832558A00CC736C /* KoreaCash.mlmodel */; };
+		E0108CE8283260C200CC736C /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CE7283260C200CC736C /* PreviewView.swift */; };
+		E0108CEC28333C5100CC736C /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CEB28333C5100CC736C /* CardListViewController.swift */; };
+		E0108CF02833403900CC736C /* CardListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CEF2833403900CC736C /* CardListViewCell.swift */; };
+		E0108CF2283364F200CC736C /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CF1283364F200CC736C /* CardListViewModel.swift */; };
+		E0108CF42833658200CC736C /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CF32833658200CC736C /* UserDefault.swift */; };
+		E0108CF6283365CE00CC736C /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CF5283365CE00CC736C /* UserStore.swift */; };
+		E0108CF82833784800CC736C /* CardListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CF72833784800CC736C /* CardListViewDataSource.swift */; };
+		E0108CFF2834A35200CC736C /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0108CFE2834A35200CC736C /* IntrinsicTableView.swift */; };
+		E01B528328289D18009918AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01B528228289D18009918AE /* Assets.xcassets */; };
+		E0723058282A13C900AF3E16 /* StarbuckTargetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723057282A13C900AF3E16 /* StarbuckTargetTest.swift */; };
+		E07233AA282B7DB900AF3E16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723381282B7DB900AF3E16 /* HomeViewModel.swift */; };
+		E07233AB282B7DB900AF3E16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723382282B7DB900AF3E16 /* HomeViewController.swift */; };
+		E07233AC282B7DB900AF3E16 /* RootWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723383282B7DB900AF3E16 /* RootWindow.swift */; };
+		E07233AD282B7DB900AF3E16 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723385282B7DB900AF3E16 /* PayViewController.swift */; };
+		E07233AE282B7DB900AF3E16 /* StarbucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723387282B7DB900AF3E16 /* StarbucksViewController.swift */; };
+		E07233AF282B7DB900AF3E16 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723389282B7DB900AF3E16 /* OrderDetailViewController.swift */; };
+		E07233B0282B7DB900AF3E16 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072338B282B7DB900AF3E16 /* OrderListViewController.swift */; };
+		E07233B1282B7DB900AF3E16 /* OrderTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072338D282B7DB900AF3E16 /* OrderTableViewDelegate.swift */; };
+		E07233B2282B7DB900AF3E16 /* OrderTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072338E282B7DB900AF3E16 /* OrderTableViewDataSource.swift */; };
+		E07233B3282B7DB900AF3E16 /* OrderCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072338F282B7DB900AF3E16 /* OrderCategoryViewController.swift */; };
+		E07233B4282B7DB900AF3E16 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723390282B7DB900AF3E16 /* CategoryTableViewCell.swift */; };
+		E07233B5282B7DB900AF3E16 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723391282B7DB900AF3E16 /* OrderViewModel.swift */; };
+		E07233B6282B7DB900AF3E16 /* StarbucksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723394282B7DB900AF3E16 /* StarbucksRepository.swift */; };
+		E07233B7282B7DB900AF3E16 /* StarbucksRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723395282B7DB900AF3E16 /* StarbucksRepositoryImpl.swift */; };
+		E07233B8282B7DB900AF3E16 /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723396282B7DB900AF3E16 /* NetworkRepository.swift */; };
+		E07233B9282B7DB900AF3E16 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723398282B7DB900AF3E16 /* UIColor+Extension.swift */; };
+		E07233BA282B7DB900AF3E16 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0723399282B7DB900AF3E16 /* Result+Extension.swift */; };
+		E07233BB282B7DB900AF3E16 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072339B282B7DB900AF3E16 /* Log.swift */; };
+		E07233BD282B7DB900AF3E16 /* StarbucksEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072339E282B7DB900AF3E16 /* StarbucksEntity.swift */; };
+		E07233BE282B7DB900AF3E16 /* StarbucksTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A0282B7DB900AF3E16 /* StarbucksTarget.swift */; };
+		E07233BF282B7DB900AF3E16 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A2282B7DB900AF3E16 /* APIError.swift */; };
+		E07233C0282B7DB900AF3E16 /* HTTPContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A3282B7DB900AF3E16 /* HTTPContentType.swift */; };
+		E07233C1282B7DB900AF3E16 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A4282B7DB900AF3E16 /* Provider.swift */; };
+		E07233C2282B7DB900AF3E16 /* BaseTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A5282B7DB900AF3E16 /* BaseTarget.swift */; };
+		E07233C3282B7DB900AF3E16 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A6282B7DB900AF3E16 /* HTTPMethod.swift */; };
+		E07233C4282B7DB900AF3E16 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A7282B7DB900AF3E16 /* Response.swift */; };
+		E07233C5282B7DB900AF3E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A8282B7DB900AF3E16 /* AppDelegate.swift */; };
+		E07233C6282B7DB900AF3E16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233A9282B7DB900AF3E16 /* SceneDelegate.swift */; };
+		E07233C8282B7F5200AF3E16 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233C7282B7F5200AF3E16 /* CategoryEntity.swift */; };
+		E07233CA282B82BF00AF3E16 /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = E07233C9282B82BF00AF3E16 /* Category.json */; };
+		E07233D1282BCB5E00AF3E16 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233D0282BCB5E00AF3E16 /* Container.swift */; };
+		E07233D4282BCBBC00AF3E16 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233D3282BCBBC00AF3E16 /* Inject.swift */; };
+		E07233D6282BCC8100AF3E16 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233D5282BCC8100AF3E16 /* ImageManager.swift */; };
+		E07233D9282BD60200AF3E16 /* RecommandMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233D8282BD60200AF3E16 /* RecommandMenuViewController.swift */; };
+		E07233DB282BD71900AF3E16 /* RecommandMenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233DA282BD71900AF3E16 /* RecommandMenuCellView.swift */; };
+		E07233DE282BDDB200AF3E16 /* RecommandMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233DD282BDDB200AF3E16 /* RecommandMenuDataSource.swift */; };
+		E07233E3282CA71B00AF3E16 /* MainEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233E2282CA71B00AF3E16 /* MainEventViewController.swift */; };
+		E07233E6282D039600AF3E16 /* WhatsNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233E5282D039600AF3E16 /* WhatsNewViewController.swift */; };
+		E07233E8282D03A000AF3E16 /* WhatsNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233E7282D03A000AF3E16 /* WhatsNewViewModel.swift */; };
+		E07233EA282D075B00AF3E16 /* MainEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233E9282D075B00AF3E16 /* MainEventViewModel.swift */; };
+		E07233EC282D0BE500AF3E16 /* RecommandMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233EB282D0BE500AF3E16 /* RecommandMenuViewModel.swift */; };
+		E07233EE282D0F9300AF3E16 /* WhatsNewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233ED282D0F9300AF3E16 /* WhatsNewDataSource.swift */; };
+		E07233F0282D0F9D00AF3E16 /* WhatsNewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233EF282D0F9D00AF3E16 /* WhatsNewCellView.swift */; };
+		E07233F2282D235100AF3E16 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233F1282D235100AF3E16 /* NSMutableAttributedString+Extension.swift */; };
+		E07233F5282D3BF000AF3E16 /* HomeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233F4282D3BF000AF3E16 /* HomeInfoView.swift */; };
+		E07233F8282D516200AF3E16 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07233F7282D516200AF3E16 /* GradientView.swift */; };
+		E08BB6AF28294347005ADEFA /* StarbucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BB6AE28294347005ADEFA /* StarbucksTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E08BB6B028294347005ADEFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01B526E28289D17009918AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01B527528289D17009918AE;
+			remoteInfo = Starbucks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006FA0912832433A00281C4D /* CategoryProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductEntity.swift; sourceTree = "<group>"; };
+		006FA0932833408200281C4D /* OrderListTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewDataSource.swift; sourceTree = "<group>"; };
+		006FA0952833775400281C4D /* OrderListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewDelegate.swift; sourceTree = "<group>"; };
+		006FA0972833785B00281C4D /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		00AC77CC2833FA3B00BBBF43 /* DetailListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListEntity.swift; sourceTree = "<group>"; };
+		0179ED7916AEC19F665042EB /* Pods-StarbucksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarbucksTests.debug.xcconfig"; path = "Target Support Files/Pods-StarbucksTests/Pods-StarbucksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E71CB222835154C00F6D2D0 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
+		3A9DAC6A7B755F657653AF4D /* Pods-StarbucksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarbucksTests.release.xcconfig"; path = "Target Support Files/Pods-StarbucksTests/Pods-StarbucksTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FB5B0DED07CE08CC9C4C6F9 /* Pods_StarbucksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarbucksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		663577AC173C2F6DE7BEDD8F /* Pods_Starbucks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starbucks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		879C2C634B79C5B7E7318DE8 /* Pods-Starbucks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starbucks.debug.xcconfig"; path = "Target Support Files/Pods-Starbucks/Pods-Starbucks.debug.xcconfig"; sourceTree = "<group>"; };
+		E0039B55282FD92800298719 /* WhatsNewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewListViewController.swift; sourceTree = "<group>"; };
+		E0039B57282FD93200298719 /* WhatsNewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewListViewModel.swift; sourceTree = "<group>"; };
+		E0108CD3282FEE4D00CC736C /* WhatsNewListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewListDataSource.swift; sourceTree = "<group>"; };
+		E0108CD5282FEF4A00CC736C /* WhatsNewListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewListViewCell.swift; sourceTree = "<group>"; };
+		E0108CD9283128CD00CC736C /* PayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewModel.swift; sourceTree = "<group>"; };
+		E0108CDB28312EED00CC736C /* CameraRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRepository.swift; sourceTree = "<group>"; };
+		E0108CDE28312F0E00CC736C /* CameraRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRepositoryImpl.swift; sourceTree = "<group>"; };
+		E0108CE12831314800CC736C /* CameraSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSession.swift; sourceTree = "<group>"; };
+		E0108CE32831E8D600CC736C /* CameraSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSessionError.swift; sourceTree = "<group>"; };
+		E0108CE52832558A00CC736C /* KoreaCash.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KoreaCash.mlmodel; sourceTree = "<group>"; };
+		E0108CE7283260C200CC736C /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		E0108CEB28333C5100CC736C /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		E0108CEF2833403900CC736C /* CardListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewCell.swift; sourceTree = "<group>"; };
+		E0108CF1283364F200CC736C /* CardListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		E0108CF32833658200CC736C /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		E0108CF5283365CE00CC736C /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		E0108CF72833784800CC736C /* CardListViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewDataSource.swift; sourceTree = "<group>"; };
+		E0108CFE2834A35200CC736C /* IntrinsicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
+		E01B527628289D17009918AE /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01B528228289D18009918AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E01B528728289D18009918AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0723057282A13C900AF3E16 /* StarbuckTargetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbuckTargetTest.swift; sourceTree = "<group>"; };
+		E0723381282B7DB900AF3E16 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E0723382282B7DB900AF3E16 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E0723383282B7DB900AF3E16 /* RootWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWindow.swift; sourceTree = "<group>"; };
+		E0723385282B7DB900AF3E16 /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		E0723387282B7DB900AF3E16 /* StarbucksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarbucksViewController.swift; sourceTree = "<group>"; };
+		E0723389282B7DB900AF3E16 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		E072338B282B7DB900AF3E16 /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
+		E072338D282B7DB900AF3E16 /* OrderTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewDelegate.swift; sourceTree = "<group>"; };
+		E072338E282B7DB900AF3E16 /* OrderTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewDataSource.swift; sourceTree = "<group>"; };
+		E072338F282B7DB900AF3E16 /* OrderCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCategoryViewController.swift; sourceTree = "<group>"; };
+		E0723390282B7DB900AF3E16 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E0723391282B7DB900AF3E16 /* OrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		E0723394282B7DB900AF3E16 /* StarbucksRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarbucksRepository.swift; sourceTree = "<group>"; };
+		E0723395282B7DB900AF3E16 /* StarbucksRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarbucksRepositoryImpl.swift; sourceTree = "<group>"; };
+		E0723396282B7DB900AF3E16 /* NetworkRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		E0723398282B7DB900AF3E16 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E0723399282B7DB900AF3E16 /* Result+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
+		E072339B282B7DB900AF3E16 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		E072339E282B7DB900AF3E16 /* StarbucksEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarbucksEntity.swift; sourceTree = "<group>"; };
+		E07233A0282B7DB900AF3E16 /* StarbucksTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarbucksTarget.swift; sourceTree = "<group>"; };
+		E07233A2282B7DB900AF3E16 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		E07233A3282B7DB900AF3E16 /* HTTPContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPContentType.swift; sourceTree = "<group>"; };
+		E07233A4282B7DB900AF3E16 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		E07233A5282B7DB900AF3E16 /* BaseTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTarget.swift; sourceTree = "<group>"; };
+		E07233A6282B7DB900AF3E16 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E07233A7282B7DB900AF3E16 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E07233A8282B7DB900AF3E16 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E07233A9282B7DB900AF3E16 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E07233C7282B7F5200AF3E16 /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
+		E07233C9282B82BF00AF3E16 /* Category.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
+		E07233D0282BCB5E00AF3E16 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		E07233D3282BCBBC00AF3E16 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		E07233D5282BCC8100AF3E16 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		E07233D8282BD60200AF3E16 /* RecommandMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandMenuViewController.swift; sourceTree = "<group>"; };
+		E07233DA282BD71900AF3E16 /* RecommandMenuCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandMenuCellView.swift; sourceTree = "<group>"; };
+		E07233DD282BDDB200AF3E16 /* RecommandMenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandMenuDataSource.swift; sourceTree = "<group>"; };
+		E07233E2282CA71B00AF3E16 /* MainEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventViewController.swift; sourceTree = "<group>"; };
+		E07233E5282D039600AF3E16 /* WhatsNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewViewController.swift; sourceTree = "<group>"; };
+		E07233E7282D03A000AF3E16 /* WhatsNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewViewModel.swift; sourceTree = "<group>"; };
+		E07233E9282D075B00AF3E16 /* MainEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventViewModel.swift; sourceTree = "<group>"; };
+		E07233EB282D0BE500AF3E16 /* RecommandMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandMenuViewModel.swift; sourceTree = "<group>"; };
+		E07233ED282D0F9300AF3E16 /* WhatsNewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewDataSource.swift; sourceTree = "<group>"; };
+		E07233EF282D0F9D00AF3E16 /* WhatsNewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewCellView.swift; sourceTree = "<group>"; };
+		E07233F1282D235100AF3E16 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		E07233F4282D3BF000AF3E16 /* HomeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInfoView.swift; sourceTree = "<group>"; };
+		E07233F7282D516200AF3E16 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E08BB6AC28294347005ADEFA /* StarbucksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarbucksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08BB6AE28294347005ADEFA /* StarbucksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksTests.swift; sourceTree = "<group>"; };
+		EB77E908CE60F89C1EB53248 /* Pods-Starbucks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starbucks.release.xcconfig"; path = "Target Support Files/Pods-Starbucks/Pods-Starbucks.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E01B527328289D17009918AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E1C78E63597B5AEE24B83E /* Pods_Starbucks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08BB6A928294347005ADEFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF3F031A8A9E5CAA2DDC05 /* Pods_StarbucksTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D660B86900EFFD9394B4E3A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				879C2C634B79C5B7E7318DE8 /* Pods-Starbucks.debug.xcconfig */,
+				EB77E908CE60F89C1EB53248 /* Pods-Starbucks.release.xcconfig */,
+				0179ED7916AEC19F665042EB /* Pods-StarbucksTests.debug.xcconfig */,
+				3A9DAC6A7B755F657653AF4D /* Pods-StarbucksTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E0039B54282FD8C000298719 /* WhatsNewList */ = {
+			isa = PBXGroup;
+			children = (
+				E0039B59282FE27F00298719 /* View */,
+				E0108CD3282FEE4D00CC736C /* WhatsNewListDataSource.swift */,
+				E0039B57282FD93200298719 /* WhatsNewListViewModel.swift */,
+				E0039B55282FD92800298719 /* WhatsNewListViewController.swift */,
+			);
+			path = WhatsNewList;
+			sourceTree = "<group>";
+		};
+		E0039B59282FE27F00298719 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CD5282FEF4A00CC736C /* WhatsNewListViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0108CDD28312F0000CC736C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CDB28312EED00CC736C /* CameraRepository.swift */,
+				E0108CDE28312F0E00CC736C /* CameraRepositoryImpl.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E0108CE02831310E00CC736C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CFC2834A32900CC736C /* View */,
+				E0108CE12831314800CC736C /* CameraSession.swift */,
+				E0108CE32831E8D600CC736C /* CameraSessionError.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E0108CE928333C3900CC736C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CEA28333C4200CC736C /* CardList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0108CEA28333C4200CC736C /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CEF2833403900CC736C /* CardListViewCell.swift */,
+				E0108CF72833784800CC736C /* CardListViewDataSource.swift */,
+				E0108CEB28333C5100CC736C /* CardListViewController.swift */,
+				E0108CF1283364F200CC736C /* CardListViewModel.swift */,
+			);
+			path = CardList;
+			sourceTree = "<group>";
+		};
+		E0108CFC2834A32900CC736C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CE7283260C200CC736C /* PreviewView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0108CFD2834A33C00CC736C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E07233F7282D516200AF3E16 /* GradientView.swift */,
+				E0108CFE2834A35200CC736C /* IntrinsicTableView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E01B526D28289D17009918AE = {
+			isa = PBXGroup;
+			children = (
+				E01B527828289D17009918AE /* Starbucks */,
+				E08BB6AD28294347005ADEFA /* StarbucksTests */,
+				E01B527728289D17009918AE /* Products */,
+				D660B86900EFFD9394B4E3A6 /* Pods */,
+				E7EA5F1EF67A45D40CCE639E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E01B527728289D17009918AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E01B527628289D17009918AE /* Starbucks.app */,
+				E08BB6AC28294347005ADEFA /* StarbucksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E01B527828289D17009918AE /* Starbucks */ = {
+			isa = PBXGroup;
+			children = (
+				E072337E282B7DB900AF3E16 /* Sources */,
+				E01B528F2828A0C3009918AE /* Resource */,
+				E01B52902828A0CE009918AE /* Configuration */,
+			);
+			path = Starbucks;
+			sourceTree = "<group>";
+		};
+		E01B528F2828A0C3009918AE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CE52832558A00CC736C /* KoreaCash.mlmodel */,
+				E01B528228289D18009918AE /* Assets.xcassets */,
+				E07233C9282B82BF00AF3E16 /* Category.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E01B52902828A0CE009918AE /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E01B528728289D18009918AE /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E0723056282A13AB00AF3E16 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E0723057282A13C900AF3E16 /* StarbuckTargetTest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E072337E282B7DB900AF3E16 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E072339D282B7DB900AF3E16 /* Model */,
+				E072339F282B7DB900AF3E16 /* API */,
+				E0723392282B7DB900AF3E16 /* Repository */,
+				E072337F282B7DB900AF3E16 /* Present */,
+				E0723397282B7DB900AF3E16 /* Extension */,
+				E072339A282B7DB900AF3E16 /* Common */,
+				E07233A8282B7DB900AF3E16 /* AppDelegate.swift */,
+				E07233A9282B7DB900AF3E16 /* SceneDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E072337F282B7DB900AF3E16 /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				E0723386282B7DB900AF3E16 /* TabBar */,
+				E0723380282B7DB900AF3E16 /* Home */,
+				E0039B54282FD8C000298719 /* WhatsNewList */,
+				E0723384282B7DB900AF3E16 /* Pay */,
+				E0723388282B7DB900AF3E16 /* OrderDetail */,
+				E072338A282B7DB900AF3E16 /* OrderList */,
+				E072338C282B7DB900AF3E16 /* OrderCategory */,
+				E0108CFD2834A33C00CC736C /* Common */,
+				E0723383282B7DB900AF3E16 /* RootWindow.swift */,
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
+		E0723380282B7DB900AF3E16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E07233D7282BD5B800AF3E16 /* View */,
+				E0723381282B7DB900AF3E16 /* HomeViewModel.swift */,
+				E0723382282B7DB900AF3E16 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E0723384282B7DB900AF3E16 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CE928333C3900CC736C /* View */,
+				E0723385282B7DB900AF3E16 /* PayViewController.swift */,
+				E0108CD9283128CD00CC736C /* PayViewModel.swift */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		E0723386282B7DB900AF3E16 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E0723387282B7DB900AF3E16 /* StarbucksViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E0723388282B7DB900AF3E16 /* OrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E0723389282B7DB900AF3E16 /* OrderDetailViewController.swift */,
+				1E71CB222835154C00F6D2D0 /* OrderDetailViewModel.swift */,
+			);
+			path = OrderDetail;
+			sourceTree = "<group>";
+		};
+		E072338A282B7DB900AF3E16 /* OrderList */ = {
+			isa = PBXGroup;
+			children = (
+				E072338B282B7DB900AF3E16 /* OrderListViewController.swift */,
+				006FA0972833785B00281C4D /* OrderListViewModel.swift */,
+				006FA0952833775400281C4D /* OrderListTableViewDelegate.swift */,
+				006FA0932833408200281C4D /* OrderListTableViewDataSource.swift */,
+			);
+			path = OrderList;
+			sourceTree = "<group>";
+		};
+		E072338C282B7DB900AF3E16 /* OrderCategory */ = {
+			isa = PBXGroup;
+			children = (
+				E072338F282B7DB900AF3E16 /* OrderCategoryViewController.swift */,
+				E0723391282B7DB900AF3E16 /* OrderViewModel.swift */,
+				E0723390282B7DB900AF3E16 /* CategoryTableViewCell.swift */,
+				E072338D282B7DB900AF3E16 /* OrderTableViewDelegate.swift */,
+				E072338E282B7DB900AF3E16 /* OrderTableViewDataSource.swift */,
+			);
+			path = OrderCategory;
+			sourceTree = "<group>";
+		};
+		E0723392282B7DB900AF3E16 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CDD28312F0000CC736C /* Camera */,
+				E0723393282B7DB900AF3E16 /* Starbucks */,
+				E0723396282B7DB900AF3E16 /* NetworkRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E0723393282B7DB900AF3E16 /* Starbucks */ = {
+			isa = PBXGroup;
+			children = (
+				E0723394282B7DB900AF3E16 /* StarbucksRepository.swift */,
+				E0723395282B7DB900AF3E16 /* StarbucksRepositoryImpl.swift */,
+			);
+			path = Starbucks;
+			sourceTree = "<group>";
+		};
+		E0723397282B7DB900AF3E16 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0723398282B7DB900AF3E16 /* UIColor+Extension.swift */,
+				E0723399282B7DB900AF3E16 /* Result+Extension.swift */,
+				E07233F1282D235100AF3E16 /* NSMutableAttributedString+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E072339A282B7DB900AF3E16 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E0108CE02831310E00CC736C /* Camera */,
+				E07233D2282BCBA900AF3E16 /* PropertyWrapper */,
+				E072339B282B7DB900AF3E16 /* Log.swift */,
+				E07233D0282BCB5E00AF3E16 /* Container.swift */,
+				E07233D5282BCC8100AF3E16 /* ImageManager.swift */,
+				E0108CF5283365CE00CC736C /* UserStore.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E072339D282B7DB900AF3E16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E072339E282B7DB900AF3E16 /* StarbucksEntity.swift */,
+				E07233C7282B7F5200AF3E16 /* CategoryEntity.swift */,
+				006FA0912832433A00281C4D /* CategoryProductEntity.swift */,
+				00AC77CC2833FA3B00BBBF43 /* DetailListEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E072339F282B7DB900AF3E16 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E07233A0282B7DB900AF3E16 /* StarbucksTarget.swift */,
+				E07233A1282B7DB900AF3E16 /* Base */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E07233A1282B7DB900AF3E16 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E07233A2282B7DB900AF3E16 /* APIError.swift */,
+				E07233A3282B7DB900AF3E16 /* HTTPContentType.swift */,
+				E07233A4282B7DB900AF3E16 /* Provider.swift */,
+				E07233A5282B7DB900AF3E16 /* BaseTarget.swift */,
+				E07233A6282B7DB900AF3E16 /* HTTPMethod.swift */,
+				E07233A7282B7DB900AF3E16 /* Response.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E07233D2282BCBA900AF3E16 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E07233D3282BCBBC00AF3E16 /* Inject.swift */,
+				E0108CF32833658200CC736C /* UserDefault.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		E07233D7282BD5B800AF3E16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E07233F3282D3BD300AF3E16 /* HomeInfoView */,
+				E07233E4282D037500AF3E16 /* WhatsNew */,
+				E07233E1282CA70E00AF3E16 /* MainEvent */,
+				E07233DC282BDD9C00AF3E16 /* Recommand */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E07233DC282BDD9C00AF3E16 /* Recommand */ = {
+			isa = PBXGroup;
+			children = (
+				E07233DA282BD71900AF3E16 /* RecommandMenuCellView.swift */,
+				E07233DD282BDDB200AF3E16 /* RecommandMenuDataSource.swift */,
+				E07233EB282D0BE500AF3E16 /* RecommandMenuViewModel.swift */,
+				E07233D8282BD60200AF3E16 /* RecommandMenuViewController.swift */,
+			);
+			path = Recommand;
+			sourceTree = "<group>";
+		};
+		E07233E1282CA70E00AF3E16 /* MainEvent */ = {
+			isa = PBXGroup;
+			children = (
+				E07233E2282CA71B00AF3E16 /* MainEventViewController.swift */,
+				E07233E9282D075B00AF3E16 /* MainEventViewModel.swift */,
+			);
+			path = MainEvent;
+			sourceTree = "<group>";
+		};
+		E07233E4282D037500AF3E16 /* WhatsNew */ = {
+			isa = PBXGroup;
+			children = (
+				E07233EF282D0F9D00AF3E16 /* WhatsNewCellView.swift */,
+				E07233ED282D0F9300AF3E16 /* WhatsNewDataSource.swift */,
+				E07233E5282D039600AF3E16 /* WhatsNewViewController.swift */,
+				E07233E7282D03A000AF3E16 /* WhatsNewViewModel.swift */,
+			);
+			path = WhatsNew;
+			sourceTree = "<group>";
+		};
+		E07233F3282D3BD300AF3E16 /* HomeInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				E07233F4282D3BF000AF3E16 /* HomeInfoView.swift */,
+			);
+			path = HomeInfoView;
+			sourceTree = "<group>";
+		};
+		E08BB6AD28294347005ADEFA /* StarbucksTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0723056282A13AB00AF3E16 /* API */,
+				E08BB6AE28294347005ADEFA /* StarbucksTests.swift */,
+			);
+			path = StarbucksTests;
+			sourceTree = "<group>";
+		};
+		E7EA5F1EF67A45D40CCE639E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				663577AC173C2F6DE7BEDD8F /* Pods_Starbucks.framework */,
+				5FB5B0DED07CE08CC9C4C6F9 /* Pods_StarbucksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E01B527528289D17009918AE /* Starbucks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E01B528A28289D18009918AE /* Build configuration list for PBXNativeTarget "Starbucks" */;
+			buildPhases = (
+				EC48B327C00CB96D6E9C2259 /* [CP] Check Pods Manifest.lock */,
+				E01B527228289D17009918AE /* Sources */,
+				E01B527328289D17009918AE /* Frameworks */,
+				E01B527428289D17009918AE /* Resources */,
+				E01B528D28289D92009918AE /* swiftlint */,
+				3CCDD8A1D594DA587B98324C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starbucks;
+			productName = Starbucks;
+			productReference = E01B527628289D17009918AE /* Starbucks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E08BB6AB28294347005ADEFA /* StarbucksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E08BB6B228294347005ADEFA /* Build configuration list for PBXNativeTarget "StarbucksTests" */;
+			buildPhases = (
+				0A79A6CCEA1B0130AC77F125 /* [CP] Check Pods Manifest.lock */,
+				E08BB6A828294347005ADEFA /* Sources */,
+				E08BB6A928294347005ADEFA /* Frameworks */,
+				E08BB6AA28294347005ADEFA /* Resources */,
+				2E874F306299B9BA4B865F96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E08BB6B128294347005ADEFA /* PBXTargetDependency */,
+			);
+			name = StarbucksTests;
+			productName = StarbucksTests;
+			productReference = E08BB6AC28294347005ADEFA /* StarbucksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E01B526E28289D17009918AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E01B527528289D17009918AE = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					E08BB6AB28294347005ADEFA = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = E01B527528289D17009918AE;
+					};
+				};
+			};
+			buildConfigurationList = E01B527128289D17009918AE /* Build configuration list for PBXProject "Starbucks" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E01B526D28289D17009918AE;
+			productRefGroup = E01B527728289D17009918AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E01B527528289D17009918AE /* Starbucks */,
+				E08BB6AB28294347005ADEFA /* StarbucksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E01B527428289D17009918AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01B528328289D18009918AE /* Assets.xcassets in Resources */,
+				E07233CA282B82BF00AF3E16 /* Category.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08BB6AA28294347005ADEFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A79A6CCEA1B0130AC77F125 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarbucksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E874F306299B9BA4B865F96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarbucksTests/Pods-StarbucksTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarbucksTests/Pods-StarbucksTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarbucksTests/Pods-StarbucksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CCDD8A1D594DA587B98324C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starbucks/Pods-Starbucks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starbucks/Pods-Starbucks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starbucks/Pods-Starbucks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E01B528D28289D92009918AE /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		EC48B327C00CB96D6E9C2259 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Starbucks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E01B527228289D17009918AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0108CFF2834A35200CC736C /* IntrinsicTableView.swift in Sources */,
+				E07233E3282CA71B00AF3E16 /* MainEventViewController.swift in Sources */,
+				E07233C2282B7DB900AF3E16 /* BaseTarget.swift in Sources */,
+				006FA0982833785B00281C4D /* OrderListViewModel.swift in Sources */,
+				E0039B56282FD92800298719 /* WhatsNewListViewController.swift in Sources */,
+				E07233AF282B7DB900AF3E16 /* OrderDetailViewController.swift in Sources */,
+				006FA0962833775400281C4D /* OrderListTableViewDelegate.swift in Sources */,
+				E07233BA282B7DB900AF3E16 /* Result+Extension.swift in Sources */,
+				E0108CF82833784800CC736C /* CardListViewDataSource.swift in Sources */,
+				E07233C8282B7F5200AF3E16 /* CategoryEntity.swift in Sources */,
+				E0108CEC28333C5100CC736C /* CardListViewController.swift in Sources */,
+				E07233C5282B7DB900AF3E16 /* AppDelegate.swift in Sources */,
+				E0108CDA283128CD00CC736C /* PayViewModel.swift in Sources */,
+				E07233DB282BD71900AF3E16 /* RecommandMenuCellView.swift in Sources */,
+				E0108CE8283260C200CC736C /* PreviewView.swift in Sources */,
+				E07233BE282B7DB900AF3E16 /* StarbucksTarget.swift in Sources */,
+				E0108CDC28312EED00CC736C /* CameraRepository.swift in Sources */,
+				E07233C1282B7DB900AF3E16 /* Provider.swift in Sources */,
+				E07233F5282D3BF000AF3E16 /* HomeInfoView.swift in Sources */,
+				E07233D1282BCB5E00AF3E16 /* Container.swift in Sources */,
+				E07233BB282B7DB900AF3E16 /* Log.swift in Sources */,
+				E07233B1282B7DB900AF3E16 /* OrderTableViewDelegate.swift in Sources */,
+				E07233B7282B7DB900AF3E16 /* StarbucksRepositoryImpl.swift in Sources */,
+				E07233D6282BCC8100AF3E16 /* ImageManager.swift in Sources */,
+				E0108CF6283365CE00CC736C /* UserStore.swift in Sources */,
+				E07233B8282B7DB900AF3E16 /* NetworkRepository.swift in Sources */,
+				E07233DE282BDDB200AF3E16 /* RecommandMenuDataSource.swift in Sources */,
+				006FA0922832433A00281C4D /* CategoryProductEntity.swift in Sources */,
+				E07233F8282D516200AF3E16 /* GradientView.swift in Sources */,
+				E07233C3282B7DB900AF3E16 /* HTTPMethod.swift in Sources */,
+				E07233C6282B7DB900AF3E16 /* SceneDelegate.swift in Sources */,
+				E07233C0282B7DB900AF3E16 /* HTTPContentType.swift in Sources */,
+				E07233AC282B7DB900AF3E16 /* RootWindow.swift in Sources */,
+				E07233C4282B7DB900AF3E16 /* Response.swift in Sources */,
+				E07233F0282D0F9D00AF3E16 /* WhatsNewCellView.swift in Sources */,
+				E07233B5282B7DB900AF3E16 /* OrderViewModel.swift in Sources */,
+				E07233EC282D0BE500AF3E16 /* RecommandMenuViewModel.swift in Sources */,
+				E07233D9282BD60200AF3E16 /* RecommandMenuViewController.swift in Sources */,
+				E0108CF42833658200CC736C /* UserDefault.swift in Sources */,
+				E07233AA282B7DB900AF3E16 /* HomeViewModel.swift in Sources */,
+				E0108CE62832558A00CC736C /* KoreaCash.mlmodel in Sources */,
+				E07233B9282B7DB900AF3E16 /* UIColor+Extension.swift in Sources */,
+				E07233EE282D0F9300AF3E16 /* WhatsNewDataSource.swift in Sources */,
+				E0108CD4282FEE4D00CC736C /* WhatsNewListDataSource.swift in Sources */,
+				006FA0942833408200281C4D /* OrderListTableViewDataSource.swift in Sources */,
+				E07233E6282D039600AF3E16 /* WhatsNewViewController.swift in Sources */,
+				E07233BD282B7DB900AF3E16 /* StarbucksEntity.swift in Sources */,
+				E0108CE42831E8D600CC736C /* CameraSessionError.swift in Sources */,
+				E0108CF2283364F200CC736C /* CardListViewModel.swift in Sources */,
+				E07233F2282D235100AF3E16 /* NSMutableAttributedString+Extension.swift in Sources */,
+				E0108CF02833403900CC736C /* CardListViewCell.swift in Sources */,
+				E07233D4282BCBBC00AF3E16 /* Inject.swift in Sources */,
+				1E71CB232835154C00F6D2D0 /* OrderDetailViewModel.swift in Sources */,
+				E07233B0282B7DB900AF3E16 /* OrderListViewController.swift in Sources */,
+				E0039B58282FD93200298719 /* WhatsNewListViewModel.swift in Sources */,
+				E07233B2282B7DB900AF3E16 /* OrderTableViewDataSource.swift in Sources */,
+				E07233B4282B7DB900AF3E16 /* CategoryTableViewCell.swift in Sources */,
+				E07233E8282D03A000AF3E16 /* WhatsNewViewModel.swift in Sources */,
+				00AC77CD2833FA3B00BBBF43 /* DetailListEntity.swift in Sources */,
+				E07233EA282D075B00AF3E16 /* MainEventViewModel.swift in Sources */,
+				E0108CE22831314800CC736C /* CameraSession.swift in Sources */,
+				E07233AE282B7DB900AF3E16 /* StarbucksViewController.swift in Sources */,
+				E07233AB282B7DB900AF3E16 /* HomeViewController.swift in Sources */,
+				E07233AD282B7DB900AF3E16 /* PayViewController.swift in Sources */,
+				E07233B3282B7DB900AF3E16 /* OrderCategoryViewController.swift in Sources */,
+				E0108CDF28312F0E00CC736C /* CameraRepositoryImpl.swift in Sources */,
+				E07233B6282B7DB900AF3E16 /* StarbucksRepository.swift in Sources */,
+				E0108CD6282FEF4A00CC736C /* WhatsNewListViewCell.swift in Sources */,
+				E07233BF282B7DB900AF3E16 /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08BB6A828294347005ADEFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08BB6AF28294347005ADEFA /* StarbucksTests.swift in Sources */,
+				E0723058282A13C900AF3E16 /* StarbuckTargetTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E08BB6B128294347005ADEFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01B527528289D17009918AE /* Starbucks */;
+			targetProxy = E08BB6B028294347005ADEFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E01B528828289D18009918AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E01B528928289D18009918AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E01B528B28289D18009918AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 879C2C634B79C5B7E7318DE8 /* Pods-Starbucks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Starbucks/Configuration/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용합니다!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codesquad.team21.Starbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E01B528C28289D18009918AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB77E908CE60F89C1EB53248 /* Pods-Starbucks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Starbucks/Configuration/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용합니다!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codesquad.team21.Starbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E08BB6B328294347005ADEFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0179ED7916AEC19F665042EB /* Pods-StarbucksTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codesquad.team21.StarbucksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starbucks.app/Starbucks";
+			};
+			name = Debug;
+		};
+		E08BB6B428294347005ADEFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9DAC6A7B755F657653AF4D /* Pods-StarbucksTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codesquad.team21.StarbucksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starbucks.app/Starbucks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E01B527128289D17009918AE /* Build configuration list for PBXProject "Starbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01B528828289D18009918AE /* Debug */,
+				E01B528928289D18009918AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E01B528A28289D18009918AE /* Build configuration list for PBXNativeTarget "Starbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01B528B28289D18009918AE /* Debug */,
+				E01B528C28289D18009918AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E08BB6B228294347005ADEFA /* Build configuration list for PBXNativeTarget "StarbucksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E08BB6B328294347005ADEFA /* Debug */,
+				E08BB6B428294347005ADEFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E01B526E28289D17009918AE /* Project object */;
+}
