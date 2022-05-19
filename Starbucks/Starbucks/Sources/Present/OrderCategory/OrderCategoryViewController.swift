@@ -13,29 +13,20 @@ import UIKit
 
 class OrderCategoryViewController: UIViewController {
     
-    private let tableView = UITableView()
-    private var tableViewDataSource: OrderTableViewDataSource?
-    private let tableViewHandler = OrderTableViewDelegate()
+    let test = UIView()
     
-    private let orderLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Order"
-        label.font = .systemFont(ofSize: 28, weight: .bold)
-        label.textAlignment = .left
-        return label
-    }()
-    
-    private let backBarButtonItem: UIBarButtonItem = {
-        let barButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
-        barButtonItem.tintColor = .systemGray
-        return barButtonItem
-    }()
-    
-    private let categoryView: UIView = {
+    private let tableSectionHeaderView: UIView = {
         let view = UIView()
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.systemGray.cgColor
+        view.backgroundColor = .white
         return view
+    }()
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: CategoryTableViewCell.identifier)
+        tableView.separatorStyle = .none
+        tableView.contentInset.top = 0
+        return tableView
     }()
     
     private let categoryStackView: UIStackView = {
@@ -56,6 +47,13 @@ class OrderCategoryViewController: UIViewController {
         }
     }()
     
+    private let categoryViewBar: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        return view
+    }()
+    
+    private var tableViewDataSource = OrderTableViewDataSource()
     private let viewModel: OrderViewModelProtocol
     private let disposeBag = DisposeBag()
     
@@ -77,18 +75,36 @@ class OrderCategoryViewController: UIViewController {
             .bind(to: viewModel.action().loadCategory)
             .disposed(by: disposeBag)
         
-        viewModel.state().loadedCategory
-            .bind(onNext: { menu in
-                self.updateDatasource(menu: menu)
+        rx.viewWillAppear
+            .withUnretained(self)
+            .bind(onNext: { vc, _ in
+                vc.navigationController?.navigationBar.prefersLargeTitles = true
+
+                let appearance = UINavigationBarAppearance()
+                appearance.backgroundColor = .white
+                appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+                appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+                appearance.shadowColor = .clear
+
+                vc.navigationController?.navigationBar.tintColor = .black
+                //기본상태( 스크롤 있는 경우 아래로 이동했을 때 )
+                vc.navigationController?.navigationBar.standardAppearance = appearance
+                //가로화면으로 볼 때
+                vc.navigationController?.navigationBar.compactAppearance = appearance
+                //스크롤의 최 상단일 때
+                vc.navigationController?.navigationBar.scrollEdgeAppearance = appearance
             })
             .disposed(by: disposeBag)
         
-        tableViewHandler.selectedCellIndex
-            .bind(to: viewModel.action().tapMenu)
+        viewModel.state().updateList
+            .bind(onNext: tableViewDataSource.update)
+            .disposed(by: disposeBag)
+        
+        viewModel.state().reloadList
+            .bind(onNext: tableView.reloadData)
             .disposed(by: disposeBag)
         
         viewModel.state().selectedCategory
-            .map { $0.index }
             .bind(onNext: { selectIndex in
                 self.categoryButtons.enumerated().forEach { index, button in
                     button.isSelected = index == selectIndex
@@ -98,9 +114,7 @@ class OrderCategoryViewController: UIViewController {
         
         categoryButtons.enumerated().forEach { index, button in
             button.rx.tap
-                .compactMap { _ in
-                    Category.GroupType.indexToCase(index)
-                }
+                .map { _ in index }
                 .bind(to: viewModel.action().tappedCategory)
                 .disposed(by: disposeBag)
         }
@@ -110,66 +124,58 @@ class OrderCategoryViewController: UIViewController {
             .bind(onNext: { model, subCategory in
                 let viewModel = OrderListViewModel(subCategory: subCategory.groupId, title: subCategory.title)
                 let orderListVC = OrderListViewController(viewModel: viewModel)
-                model.navigationItem.backBarButtonItem = model.backBarButtonItem
+                model.navigationItem.backButtonTitle = ""
                 model.navigationController?.pushViewController(orderListVC, animated: true)
             })
             .disposed(by: disposeBag)
     }
     
     private func attribute() {
-        view.backgroundColor = .systemBackground
-        configureTableView()
+        title = "Order"
+        view.backgroundColor = .white
+        tableView.delegate = self
+        tableView.dataSource = tableViewDataSource
     }
     
     private func layout() {
-        view.addSubview(orderLabel)
-        view.addSubview(categoryView)
-        categoryView.addSubview(categoryStackView)
-        
         view.addSubview(tableView)
         
+        tableSectionHeaderView.addSubview(categoryStackView)
+        tableSectionHeaderView.addSubview(categoryViewBar)
         categoryButtons.forEach {
             categoryStackView.addArrangedSubview($0)
         }
         
-        orderLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(80)
-            $0.leading.trailing.equalToSuperview().inset(20)
-        }
-        
-        categoryView.snp.makeConstraints {
-            $0.top.equalTo(orderLabel.snp.bottom).offset(40)
-            $0.leading.trailing.equalToSuperview().inset(-1)
-            $0.bottom.equalTo(categoryStackView)
-        }
-        
         categoryStackView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(2)
-            $0.leading.equalToSuperview().offset(30)
-            $0.height.equalTo(45)
+            $0.top.bottom.equalToSuperview()
+            $0.trailing.equalTo(categoryButtons[categoryButtons.count - 1])
+            $0.leading.equalToSuperview().offset(20)
+        }
+        
+        categoryViewBar.snp.makeConstraints {
+            $0.leading.trailing.bottom.equalToSuperview()
+            $0.height.equalTo(1)
         }
         
         tableView.snp.makeConstraints {
-            $0.top.equalTo(categoryView.snp.bottom)
+            $0.top.equalToSuperview()
             $0.leading.trailing.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide)
         }
     }
-    
-    private func configureTableView() {
-        tableView.rowHeight = 100
-        tableView.separatorStyle = .none
-        tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: CategoryTableViewCell.identifier)
-        tableView.delegate = tableViewHandler
-    }
 }
 
-extension OrderCategoryViewController {
-    private func updateDatasource(menu: [Category.Group]) {
-        self.tableViewDataSource = OrderTableViewDataSource(menus: menu)
-        DispatchQueue.main.async { [weak self] in
-            self?.tableView.dataSource = self?.tableViewDataSource
-            self?.tableView.reloadData()
-        }
+extension OrderCategoryViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        tableSectionHeaderView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        50
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.action().tappedMenu.accept(indexPath.item)
     }
 }

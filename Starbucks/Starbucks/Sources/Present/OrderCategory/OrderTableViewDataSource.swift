@@ -11,11 +11,14 @@ import UIKit
 
 class OrderTableViewDataSource: NSObject, UITableViewDataSource {
     
-    private let menus: [Category.Group]
+    private var menus: [Category.Group] = []
     
-    init(menus: [Category.Group]) {
+    func update(menus: [Category.Group]) {
         self.menus = menus
-        super.init()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -63,7 +63,12 @@ class CategoryTableViewCell: UITableViewCell {
         menuNameStackView.addArrangedSubview(mainNameLabel)
         menuNameStackView.addArrangedSubview(subNameLabel)
         
+        contentView.snp.makeConstraints {
+            $0.bottom.equalTo(menuImageView).offset(10)
+        }
+        
         menuImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(10)
             $0.leading.equalToSuperview().offset(20)
             $0.centerY.equalToSuperview()
             $0.width.height.equalTo(80)
